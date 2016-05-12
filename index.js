@@ -4,8 +4,8 @@ const fields = [
   'android', 'chromecast', 'desktop', 'ios', 'mac',
   'native', 'phone', 'tablet', 'touch', 'tv'
 ]
-
 /**
+ * @id cases
  * @function cases
  * Returns a cases object bases on the user agent including data such as browser, device and platform
  * @param {string | object} useragent - user agent string or vigour-ua object
