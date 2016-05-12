@@ -1,7 +1,7 @@
 'use strict'
 const ua = require('vigour-ua')
 const fields = [
-  'android', 'chromecast', 'desktop', 'ios', 'mac',
+  'android', 'chromecast', 'desktop', 'ios',
   'native', 'phone', 'tablet', 'touch', 'tv'
 ]
 /**
