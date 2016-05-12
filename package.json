@@ -41,5 +41,15 @@
     "coveralls": "^2.11.9",
     "istanbul": "^0.4.3",
     "vigour-doc": "^1.0.5"
+  },
+  "browserify": {
+    "transform": [
+      [ "babelify", {
+          "presets": [
+            "es2015"
+          ]
+        }
+      ]
+    ]
   }
 }
