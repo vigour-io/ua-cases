@@ -13,7 +13,7 @@ const fields = [
  * @param {function} transform - (optional) function to modify the cases object before it's returned
  * @returns {object} obj cases object
  */
-module.exports = function cases (useragent, cases, transform) {
+module.exports = function uacases (useragent, cases, transform) {
   if (typeof cases !== 'object') {
     cases = {}
   }
