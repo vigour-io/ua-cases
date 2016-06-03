@@ -1,6 +1,6 @@
 {
   "name": "ua-cases",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Returns cases object based on user agent.",
   "main": "index.js",
   "scripts": {
