@@ -27,6 +27,5 @@ module.exports = function uacases (useragent, cases, transform) {
   if (transform) {
     cases = transform(cases, useragent)
   }
-  console.log('cases uacases', cases);
   return cases
 }
