@@ -24,6 +24,9 @@ module.exports = function uacases (useragent, cases, transform) {
     let str = fields[i]
     cases['$' + str] = useragent.device === str || useragent.platform === str || useragent.browser === str
   }
+  if (useragent.webview) {
+    cases.$native = true
+  }
   if (transform) {
     cases = transform(cases, useragent)
   }
