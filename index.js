@@ -2,7 +2,7 @@
 const ua = require('vigour-ua')
 const fields = [
   'native',
-  'android', 'ios',
+  'android', 'ios', 'windows',
   'phone', 'tablet', 'touch',
   'desktop',
   'chromecast',
