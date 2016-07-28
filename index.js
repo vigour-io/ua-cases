@@ -1,8 +1,13 @@
 'use strict'
 const ua = require('vigour-ua')
 const fields = [
-  'android', 'chromecast', 'desktop', 'ios',
-  'native', 'phone', 'tablet', 'touch', 'tv', 'ie', 'edge'
+  'native',
+  'android', 'ios',
+  'phone', 'tablet', 'touch',
+  'desktop',
+  'chromecast',
+  'tv',
+  'ie', 'ie10', 'edge', 'chrome'
 ]
 /**
  * @id cases
@@ -14,6 +19,9 @@ const fields = [
  * @returns {object} obj cases object
  */
 module.exports = function uacases (useragent, cases, transform) {
+  console.log('uaaaaa!')
+  console.log(useragent) // first in long
+
   if (typeof cases !== 'object') {
     cases = {}
   }
@@ -22,7 +30,9 @@ module.exports = function uacases (useragent, cases, transform) {
   }
   for (let i = fields.length - 1; i >= 0; i--) {
     let str = fields[i]
-    cases['$' + str] = useragent.device === str || useragent.platform === str || useragent.browser === str
+    cases['$' + str] = useragent.device === str ||
+      useragent.platform === str || useragent.browser === str ||
+      (useragent.browser + useragent.version) === str
   }
   if (useragent.webview) {
     cases.$native = true
