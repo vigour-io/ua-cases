@@ -19,9 +19,6 @@ const fields = [
  * @returns {object} obj cases object
  */
 module.exports = function uacases (useragent, cases, transform) {
-  console.log('uaaaaa!')
-  console.log(useragent) // first in long
-
   if (typeof cases !== 'object') {
     cases = {}
   }
