@@ -5,6 +5,10 @@ const useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/5
 
 test('ua cases object', function (t) {
   const expected = {
+    $chrome: true,
+    $edge: false,
+    $windows: false,
+    $ie10: false,
     $android: false,
     $chromecast: false,
     $desktop: true,
@@ -14,8 +18,7 @@ test('ua cases object', function (t) {
     $tablet: false,
     $touch: false,
     $tv: false,
-    $ie: false,
-    $edge: false
+    $ie: false
   }
 
   t.same(c(useragent), expected,

@@ -24,7 +24,12 @@ const useragent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/5
 const cases = require('ua-cases')
 const obj = cases(useragent)
 /*
+
 → {
+  $chrome: true,
+  $edge: false,
+  $windows: false,
+  $ie10: false,
   $android: false,
   $chromecast: false,
   $desktop: true,
@@ -33,7 +38,8 @@ const obj = cases(useragent)
   $phone: false,
   $tablet: false,
   $touch: false,
-  $tv: false
+  $tv: false,
+  $ie: false
 }
 /*
 ```
