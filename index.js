@@ -7,7 +7,7 @@ const fields = [
   'desktop',
   'chromecast',
   'tv',
-  'ie', 'ie10', 'edge', 'chrome'
+  'ie', 'ie10', 'edge', 'chrome', 'safari'
 ]
 /**
  * @id cases
