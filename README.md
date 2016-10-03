@@ -39,7 +39,9 @@ const obj = cases(useragent)
   $tablet: false,
   $touch: false,
   $tv: false,
-  $ie: false
+  $ie: false,
+  '$ie10': false,
+  $firefox: false
 }
 /*
 ```
