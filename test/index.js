@@ -19,7 +19,8 @@ test('ua cases object', function (t) {
     $touch: false,
     $tv: false,
     $ie: false,
-    $safari: false
+    $safari: false,
+    $firefox: false
   }
 
   t.same(c(useragent), expected,
